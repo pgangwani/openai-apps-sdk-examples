@@ -1,2 +1,6 @@
 packages:
   - pizzaz_server_node
+
+ignoredBuiltDependencies:
+  - '@tailwindcss/oxide'
+  - esbuild
