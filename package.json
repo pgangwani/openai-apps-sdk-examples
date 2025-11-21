@@ -4,7 +4,9 @@
   "description": "",
   "main": "host/main.ts",
   "scripts": {
-    "build": "tsx ./build-all.mts",
+    "build:server": "pnpm --filter pizzaz-mcp-node build",
+    "build": "tsx ./build-all.mts && pnpm build:server",
+    "start": "pnpm --filter pizzaz-mcp-node start",
     "serve": "serve -s ./assets -p 4444 --cors",
     "dev": "vite --config vite.config.mts",
     "tsc": "tsc -b",
